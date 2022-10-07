@@ -1,0 +1,118 @@
+@charset "utf-8"
+@import '../libs/easing'
+@import '../libs/mixins'
+@import '../base/meta'
+
+@import '../base/base'
+
+@import '../modules/common/*'
+
+
+.sample1
+  position relative
+  background-color black
+
+  &__ttl
+    position absolute
+    z-index 99
+    top 50px
+    left 0
+    width 100%
+    text-align center
+    color white
+    font-size 30px
+
+  &__block
+    width 100%
+    height 0
+    padding-bottom (1100 / 1280 * 100%)
+
+.sample2
+  position relative
+  background-color black
+
+  &__ttl
+    position absolute
+    z-index 99
+    top 50px
+    left 0
+    width 100%
+    text-align center
+    color white
+    font-size 30px
+
+  &__block
+    width 100%
+    height 0
+    padding-bottom (1100 / 1280 * 100%)
+
+.sample3
+  position relative
+  background-color black
+
+  &__ttl
+    position absolute
+    z-index 99
+    top 50px
+    left 0
+    width 100%
+    text-align center
+    color white
+    font-size 30px
+
+  &__block
+    width 100%
+    height 0
+    padding-bottom (1100 / 1280 * 100%)
+
+
+@media screen and (max-width: (BREAKPOINT)px)
+
+  .sample1
+    position relative
+    background-color black
+
+    &__ttl
+      position absolute
+      z-index 99
+      top (50 * mn)
+      font-size (30 * mn)
+
+    &__block
+      width 100%
+      height (2000 * mn)
+      padding 0
+      
+
+  .sample2
+    position relative
+    background-color black
+
+    &__ttl
+      position absolute
+      z-index 99
+      top (50 * mn)
+      font-size (30 * mn)
+
+    &__block
+      width 100%
+      height (1000 * mn)
+      padding 0
+
+
+  .sample3
+    position relative
+    background-color black
+
+    &__ttl
+      position absolute
+      z-index 99
+      top (50 * mn)
+      font-size (30 * mn)
+
+    &__block
+      width 100%
+      height (1000 * mn)
+      padding 0
+
+      

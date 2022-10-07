@@ -1,0 +1,26 @@
+include /data/common
+
+//- mixins
+include /mixin/picture
+include /mixin/price_comma
+
+block data
+
+doctype
+html(lang='ja')
+  head
+    include /layout/head
+
+  body
+    .wrapper
+      //- include /modules/common/header
+
+      block content
+
+      //- include /modules/common/footer
+
+    block modal
+
+    //- JavaScript
+    //- script(src=JS_DIR + 'common.js' type='text/javascript' charset='UTF-8')
+    block script

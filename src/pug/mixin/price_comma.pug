@@ -1,0 +1,3 @@
+mixin price_comma(price)
+  - if(typeof price == 'number')
+    |#{price.toString().replace(/(\d)(?=(\d{3})+$)/g , '$1,')}
